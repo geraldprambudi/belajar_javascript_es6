@@ -6,3 +6,4 @@ Javascript adalah bahasa pemograman yang berjalan pada sisi client, tapi sekaran
 
 [Daftar Tutorial Javascript ](https://www.bewoksatukosong.com/2019/02/cara-install-bootstrap-4-part-1.html)
 1. [Tutorial Javascript part 1 Perkenalan ](https://www.bewoksatukosong.com/2019/07/belajar-javascript-es5-es6-part-1-pengenalan.html)
+2. [Tutorial Javascript part 1 Output ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-2-alert-innerhtml-consolelog.html)
