@@ -13,7 +13,10 @@
         function fungsiAku() {
             document.getElementById("ubah").innerHTML = "saya bukan babang tampan";
         }
-        
+        function checkKey(e) {
+            var event = window.event ? window.event : e;
+            console.log(event.keyCode)
+        }
     </script>
 </body>
 </html>

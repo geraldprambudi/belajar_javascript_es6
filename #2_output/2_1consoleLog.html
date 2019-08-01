@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Console Log</title>
+</head>
+<body>
+    <button>click saya</button>
+    <p id="ganti"></p>
+    <script>
+        const btn = document.querySelector("button");
+
+        btn.addEventListener("click", function(){
+            console.log("answer : kalau di klik button sudah berhasil nih, mau melakukan apa nih kita ? ");
+            console.log("jawab : nah kalau udah berfungsi, kita menambahkan text halooo coyyy pada web");
+            document.querySelector("#ganti").innerHTML="<h1>halooo coyyy</h1>";
+        }); 
+    </script>
+</body>
+</html>
