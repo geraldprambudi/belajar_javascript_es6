@@ -8,3 +8,4 @@ Javascript adalah bahasa pemograman yang berjalan pada sisi client, tapi sekaran
 1. [Tutorial Javascript Part 1 Perkenalan ](https://www.bewoksatukosong.com/2019/07/belajar-javascript-es5-es6-part-1-pengenalan.html)
 2. [Tutorial Javascript Part 2 Output ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-2-alert-innerhtml-consolelog.html)
 3. [Tutorial Javascript Part 3 Const And Let ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-3-variabel-const-let.html)
+4. [Tutorial Javascript Part 4 Mengenai Tipe Data ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-4-tipe-data.html)
