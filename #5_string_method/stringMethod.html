@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>String method</title>
+</head>
+<body>
+    <h3 style="text-align: center">String method menggunakan Substring, Length, toUpperCase dan toLowerCase, Split</h3>
+    <script>
+        const mobil = "avanza";
+        // Memanggil String Cara Pertama
+        console.log("Cara Pertama Untuk Memanggil String : ibu membeli mobil " + mobil + " harga 250 juta");
+        // Memanggil String Cara Kedua
+        console.log(`Cara Kedua Untuk Memanggil String ayam membeli ${mobil} sebanyak 5 mobil, untuk disewakan`);
+
+        // Substring : method untuk selected data atau memanggil sting untuk menjadi potongan baru
+        const buah = "mangga, jeruk, mangga, alpukat";
+        // Dimulai dari no 0 ya
+        console.log(buah.substring(8,21));
+
+        // Length : Method untuk menghitung string 
+        const band = "greenday";
+        const hitung = band.length;
+        console.log("jumlah kata dari greenday adalah " +hitung);
+
+        // method untuk merubah menjadi text besar dan kecil
+        const buku = "Belajar Pemograman Javascript Dengan bewoksatukosong.com";
+        // menggunakan method untuk uppercase atau besar
+        console.log(buku.toUpperCase());
+        // menggunakan method untuk lowercase atau kecil
+        console.log(buku.toLowerCase());
+
+        //  untuk memisahkan string menjadi array
+        const motor = "mio, beat, yamaha";
+        const x = motor.split(', ');
+        console.log(typeof(x));
+        console.log(x);
+    </script>
+</body>
+</html>
