@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Array Javascript</title>
+</head>
+<body>
+    <script>
+        // array
+        const buah = ['apel', 'jeruk', 'mangga', 'pepaya'];
+        
+        // tambah data ke-index ke 4, dimulai dari 0
+        buah[4] = "durian";
+        // ["apel", "jeruk", "mangga", "pepaya", "durian"]
+
+        // tambah data dan berada diakhir
+        buah.push("anggur");
+        //  ["kiwi", "apel", "jeruk", "mangga", "pepaya", "durian", "anggur"]
+
+        // tambah data tapi berada diawal
+        buah.unshift("kiwi");
+        // ["kiwi", "apel", "jeruk", "mangga", "pepaya", "durian", "anggur"]
+
+        // hapus data  dan hapus diakhir data
+        buah.pop();
+        // ["kiwi", "apel", "jeruk", "mangga", "pepaya", "durian"]
+
+        // menanyakan apakah variabel buah termasuk array ? true
+        console.log("Apakah variabel buah termasuk array? "+Array.isArray(buah));
+
+        // mengetahui index ke-berapa pepaya 
+        console.log("pepaya adalah index ke-"+buah.indexOf('pepaya'));
+        // index ke-4
+
+        console.log(buah);   
+
+        const angka = new Array(1, 2, 3, 4); 
+        console.log(angka);
+    </script>
+</body>
+</html>
