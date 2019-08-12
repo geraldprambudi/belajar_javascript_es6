@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object Javascript</title>
+</head>
+<body>
+    <script>
+        const orang = {
+            fullname : "naysilla mirdad",
+            username: "@naysila90",
+            tempat_lahir: "jakarta",
+            hobi: ['games', 'baca buku', 'film'], // object yang didalamnya array
+            alamat : {                            // object didalam object
+                kota: "bekasi",                                             
+                perumahan : "auri"
+            },
+            pekerjaan : "artis"
+        }
+        // tambah property | object 
+        orang.umur = 23;
+        console.log(orang.umur);
+        // 23
+
+        // panggil alamat.kota
+        console.log("Alamat Kota : "+orang.alamat.kota);
+        // bekasi
+
+        // memanggil property lahir tanpa menggunakan nama object
+        const { tempat_lahir } = orang;
+        console.log("Tempat lahir: "+tempat_lahir);
+        // jakarta
+
+        // memanggil array didalam objek
+        console.log(orang.hobi);
+
+        // panggil console.log hobi index ke 1, dimulai dari 0 ya
+        console.log("index ke-1 dari hobi adalah "+orang.hobi[1]);
+        // baca buku
+
+        console.log(orang);
+    </script>
+</body>
+</html>
