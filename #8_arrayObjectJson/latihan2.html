@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Json</title>
+</head>
+<body>
+	<script>
+		const todos = [
+			{
+				id:1,
+				text: "belajar javascript",
+				complete: true
+			},
+			{
+				id:2,
+				text: "belajar php & mysql",
+				complete: true
+			},
+			{
+				id:1,
+				text: "belajar memahami kode-kode gebetan",
+				complete: false
+			},
+		];
+		// Mengubah data menjadi json
+		const todoJson = JSON.stringify(todos);
+		console.log(todoJson);
+		// [{"id":1,"text":"belajar javascript","complete":true},{"id":2,"text":"belajar php & mysql","complete":true},{"id":1,"text":"belajar memahami kode-kode gebetan","complete":false}]
+	</script>
+</body>
+</html>

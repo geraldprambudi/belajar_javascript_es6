@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Of Object Json</title>
+</head>
+<body>
+	<script>
+		const todos = [
+			{
+				id:1,
+				text: "belajar javascript",
+				complete: true
+			},
+			{
+				id:2,
+				text: "belajar php & mysql",
+				complete: true
+			},
+			{
+				id:1,
+				text: "belajar memahami kode-kode gebetan",
+				complete: false
+			},
+		];
+		
+		// menampilkan seluruh data object
+		console.log(todos);
+
+		// tipe data-Nya menjadi objek
+		console.log(typeof(todos));
+
+		// belajar php & mysql
+		console.log(todos[1]);
+		// tipe text
+		console.log(typeof(todos[1].text));
+	</script>
+</body>
+</html>
