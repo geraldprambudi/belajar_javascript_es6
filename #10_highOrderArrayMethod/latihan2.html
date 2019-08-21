@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		// function formalGreeting() {
+		//   console.log("How are you?");
+		// }
+		// function casualGreeting() {
+		//   console.log("What's up?");
+		// }
+
+		// function kocak() {
+		// 	console.log("alay lu");
+		// }
+		// function greet(type, greetFormal, greetCasual) {
+		//   if(type === 'formal') {
+		//     greetFormal();
+		//   } else if(type === 'casual') {
+		//     greetCasual();
+		//   } else {
+		//   	kocak();
+		//   }
+		// }
+		// // prints 'What's up?'
+		// greet('formal', formalGreeting, casualGreeting);
+
+
+		const arr1 = [1, 2, 3];
+		const arr2 = [];
+		for(let i = 0; i < arr1.length; i++) {
+		  arr2.push(arr1[i] * 5);
+		}
+		// prints [ 2, 4, 6 ]
+		console.log(typeof(arr1));
+
+		// const buah = ['apel', 'jeruk', 'mangga', 'pepaya'];
+		// console.log(buah);
+
+		// MAP  | ARRAY PROTYPE MAP
+			const bil1 = [4, 12, 2];
+
+			// es 6 arrow function
+			const bil2 = bil1.map(item => {
+				return item * 20;
+			})
+
+			// es 5 
+			const bil3 = bil1.map(function(items) {
+				return items * 21;
+			})
+
+			// es 6 cara random aja
+			const bil4 = bil1.map((itemss) => {
+				return itemss - 9;
+			})
+
+			console.log("bil2 = "+bil2);
+			console.log("bil3 = "+bil3);
+			console.log("bil4 = "+bil4);
+
+			//  ES 6 SHORT
+			const bil5 = bil1.map(itemsss => itemsss * 5);
+			console.log("bil5 = "+bil5);
+
+			// MAP NGITUNG UMUR MANUSIA 
+			const ulangTahun = [1962, 1960, 1989];
+			const birthday1 = ulangTahun.map(nah => 2019 - nah);
+			const birthday2 = ulangTahun.map(nahh => 2050 - nahh);
+			console.log("birthday1 = "+birthday1);
+			console.log("birthday2 = "+birthday2);
+
+		// END MAP  | ARRAY PROTYPE MAP
+
+
+		// FILTER  | ARRAY PROTYPE FILTER
+			const persons = [
+				{name: 'andi', age: 25},
+				{name: 'nasution', age: 15},
+				{name: 'yadi', age: 40},
+				{name: 'yani', age: 12},
+			];
+
+			const fullAge = persons.filter(manusia => manusia.age >= 10);
+			console.log(`umur lebih dari 10`);
+			console.log(fullAge);
+		// END FILTER  | ARRAY PROTYPE FILTER
+	</script>
+</body>
+</html>

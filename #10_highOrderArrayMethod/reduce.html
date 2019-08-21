@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>belajar reduce</title>
+</head>
+<body>
+	<script>
+		// menggunakan high order function
+		const arr = [5,7,2,1,2,4];
+		const sum = arr.reduce(function(halah, haha) {
+		  return halah + haha;
+		});
+		// prints 25
+		console.log(sum);
+
+		// tanpa menggunakan high order function
+		const brr = [2,5,2,1];
+		let hasil = 0;
+		for(let i=0; i < brr.length; i++) {
+			hasil = hasil + brr[i];
+		}
+		console.log(hasil);
+	</script>
+</body>
+</html>

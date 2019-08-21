@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>latihan2</title>
+</head>
+<body>
+	<script>
+		const todos = [
+			{
+				id: 1,
+				text: "matematika",
+				isCompleted: true
+			},
+			{
+				id: 2,
+				text: "ipa",
+				isCompleted: true
+			},
+			{
+				id: 3,
+				text: "bahasa indonesia",
+				isCompleted: false
+			},
+		];
+
+		for(let i=0; i < todos.length; i++) {
+			// console.log(`for loop number: ${i}`);
+			console.log(todos[i]);
+		}
+		// --------------------------------------- //
+
+		console.log('menggunakan for');
+		for(let todo of todos) {
+			console.log(todo);
+		}
+
+		/**
+		   forEach, map, filter   
+		**/
+
+		// 1. forEach
+		console.log('menggunakan forEach');
+		todos.forEach(function(todo) {
+			console.log(todo);
+		})
+
+		// 2. Map
+		console.log('menggunakan map');
+		const todoText = todos.map((todo) => {
+			return todo;
+		})
+		console.log(todoText);
+
+		// 3. Filter untuk filter data mana yang true
+		console.log('menggunakan filter');
+		const todoCompleted = todos.filter(function(todo) {
+			return todo.isCompleted === true;
+		});
+		// filter yang isCompleted yang true
+		console.log(todoCompleted);
+	</script>
+</body>
+</html>

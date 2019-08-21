@@ -13,4 +13,6 @@ Javascript adalah bahasa pemograman yang berjalan pada sisi client, tapi sekaran
 6. [Tutorial Javascript Part 6 Array ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-6-array.html)
 7. [Tutorial Javascript Part 7 Object ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-7-object.html)
 8. [Tutorial Javascript Part 8 Array Of Object & JSON ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-8-array-of-object-json.html)
+9. [Tutorial Javascript Part 9 Looping ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-9-looping.html)
+10. [Tutorial Javascript Part 10 High Order Function ](https://www.bewoksatukosong.com/2019/08/belajar-javascript-es5-dan-es6-part-10-high-order-function.html)
 

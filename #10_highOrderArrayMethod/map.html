@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contoh map</title>
+</head>
+<body>
+<script>
+	// membuat array bil1
+	const bil1 = [2,4,6];
+
+	// metode 1 dengan menggunakan map
+	const bil2 = bil1.map(function(hitung1) {
+		return hitung1 + 5;
+	})
+	// 5+2 | 5+4 | 5+6
+	console.log(bil2);
+	// [7,9,11]
+
+	// ------------------------------
+
+	// metode 2 dengan menggunakan map dan arrow function 
+	const bil3 = bil1.map(hitung2 => hitung2 * 3);
+	console.log(bil3);
+	// [6,12,18]
+
+</script>
+</body>
+</html>

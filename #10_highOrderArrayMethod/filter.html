@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>contoh map</title>
+</head>
+<body>
+<script>
+	const persons = 
+	[
+		{name: 'andi', age: 25},
+		{name: 'nasution', age: 15},
+		{name: 'yadi', age: 43},
+		{name: 'yani', age: 12},
+	];
+
+	// metode tanpa higher order function 
+	const fullAge = [];
+	for(let i=0; i < persons.length; i++) {
+		
+		if(persons[i].age > 18) {	
+			fullAge.push(persons[i]);
+
+		}
+	}
+	console.log(fullAge);
+
+	// metode pertama menggunakan filter()
+	const umurLebih17 = persons.filter(function(manusia){
+		return manusia.age >= 17;
+	})
+	console.log(umurLebih17);
+	// andi & yadi
+
+	// metode pertama menggunakan filter() & arrow function SOAL : TOLONG TAMPILKAN UMUR LEBIH DARI 17 DENGAN MENGGUNAKAN ARROW FUNCTION
+	const umur17lebih = persons.filter(umurDia => umurDia.age >= 17);
+	console.log(umur17lebih);
+
+	// metode kedua menggunakan filter() dan arrow function SOAL :  tolong tampilkan umur kurang dari 17
+	const umurKurang17 = persons.filter(umur => umur.age <= 17);
+	console.log(umurKurang17);	
+</script>
+</body>
+</html>
