@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>inputIfElse</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+	<div class="container mt-4">
+		<div class="form-group">
+		   <label>Masukan Input Pertama</label>
+		   <input type="number" class="form-control" id="myInput1" placeholder="Enter Angka 1">
+		 </div>
+		 <div class="form-group">
+		   <label>Masukan Input Kedua</label>
+		   <input type="number" class="form-control" id="myInput2" placeholder="Enter Angka 2">
+		 </div>
+		 <button onclick="myFunction()" type="submit" class="btn btn-primary">Submit</button>
+		 <h1 id="demo" class="text-center"></h1>
+	</div>
+	<script>
+		function myFunction() {
+			let text;	
+			let a = document.getElementById("myInput1").value;    
+			let b = document.getElementById("myInput2").value;
+
+			if (a < b) {
+				text = `${a} lebih kecil dari ${b}`;
+			} else {
+				text = `${a} lebih besar dari ${b}`;
+			} 
+			document.querySelector("#demo").innerHTML = text;
+		}
+	</script>
+</body>
+</html>

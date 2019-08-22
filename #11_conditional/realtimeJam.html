@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Realtime clock</title>
+	<style>
+		#demo {
+			border: 5px solid #3498db;
+			margin: 0;
+			text-align: center;
+			color: #ecf0f1;
+			background: #2980b9;
+		}
+	</style>
+</head>
+<body onload="startTime()">
+	<h1 id="demo"></h1><br>
+	<script>
+		// jam digital
+		function startTime() {
+			  let wadaw = new Date();
+			  let h = wadaw.getHours();
+			  let m = wadaw.getMinutes();
+			  let s = wadaw.getSeconds();
+			  m = checkTime(m);
+			  s = checkTime(s);
+			  document.querySelector('#demo').innerHTML = h + ":" + m + ":" + s;
+			  let t = setTimeout(startTime, 500);
+		}
+
+		function checkTime(i) {
+			if(i < 10) {i = "0" + i};
+			return i;
+		}
+	</script>
+</body>
+</html>

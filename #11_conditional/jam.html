@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jam</title>
+	<style>
+		#demo {
+			border: 5px solid #c0392b;
+			margin: 0;
+			text-align: center;
+			color: #ecf0f1;
+			background: #e74c3c;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="demo"></h1>
+	<script>
+		let jam = new Date().getHours();
+		let today = new Date();
+		let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+		let ucapan;
+		if (jam < 18) {
+			ucapan =  `Good Afternoon <br> Jam saat ini:  ${time}`;
+		} else if(jam < 22) {
+			ucapan =  `Good Night <br> Jam saat ini: ${time}`;
+		} else if(jam < 12) {
+			ucapan =  `Good Morning <br> Jam saat ini: ${time}`;
+		} 
+		document.querySelector("#demo").innerHTML = ucapan;
+	</script>
+</body>
+</html>
