@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>buttonDOM</title>
+	<style>
+		button {
+			padding: 1rem;
+			color: #fff;
+			border: 3px solid #fff;
+			background: #34495e;
+			text-transform: uppercase;
+		}
+	</style>
+</head>
+<body>
+	<button class="btn-a">klik disini</button>
+	<button class="btn-b">klik disana</button>
+	<h1 class="demo"></h1>
+	<script>
+		const btn_a = document.querySelector(".btn-a");
+		const btn_b = document.querySelector(".btn-b");
+		const demo = document.querySelector(".demo");
+
+		// cara lama
+		btn_a.addEventListener("click", function(e) {
+			e.preventDefault();
+			console.log("wadidaw");
+			demo.innerHTML = "<span style='color:#2980b9;'>hello</span>";
+			btn_a.style.background = "#3498db";
+		});
+
+		// arrow function
+		btn_b.addEventListener("click",(e) => {
+			e.preventDefault();
+			console.log("wadidaw");
+			demo.innerHTML = "<span style='color:#c0392b;'>bewoksatukosong</span>";
+			btn_b.style.background = "#e74c3c";
+
+		})
+
+	</script>
+</body>
+</html>

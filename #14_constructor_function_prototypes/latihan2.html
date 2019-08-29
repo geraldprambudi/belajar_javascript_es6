@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prototypes</title>
+</head>
+<body>
+	<script>
+		// constructor
+		function Orang(namaDepan, namaBelakang, tglLahir) {
+			this.namaDepan = namaDepan;
+			this.namaBelakang = namaBelakang;
+			this.tglLahir = new Date(tglLahir);
+
+			// method
+			Orang.prototype.getTahunLahir = function() {
+				return this.tglLahir.getFullYear();
+			}
+
+			Orang.prototype.getNamadepan = function() {
+				return `${this.namaDepan}`;
+			}
+
+			// add constructor 
+			Orang.prototype.alamat = "bekasi";
+		}
+
+		// instantiate object
+		const Orang1 = new Orang('alfian', 'maulana', '9-8-1993');
+
+		console.log(Orang1.getTahunLahir());
+		console.log(Orang1.getNamadepan());
+		console.log(Orang1.alamat);
+		console.log(Orang1);
+  	</script>
+</body>
+</html>

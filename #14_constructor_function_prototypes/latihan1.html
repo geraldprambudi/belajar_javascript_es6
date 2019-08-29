@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>constructor</title>
+</head>
+<body>
+	<script>
+		// constructor
+		function Orang(namaDepan, namaBelakang, tglLahir) {
+			this.namaDepan = namaDepan;
+			this.namaBelakang = namaBelakang;
+			this.tglLahir = new Date(tglLahir);
+
+			// method
+			this.getTahunLahir = function() {
+				return this.tglLahir.getFullYear();
+			}
+
+			// method
+			this.getNamadepan = function() {
+				return `${this.namaDepan}`;
+			}
+		}
+
+		// instantiate object / membuat objects
+		const Orang1 = new Orang('alfian', 'maulana', '9-8-1993');
+
+		console.log(Orang1.getTahunLahir());
+		console.log(Orang1.getNamadepan());
+		console.log(Orang1.namaDepan);
+		console.log(Orang1);
+  	</script>
+</body>
+</html>

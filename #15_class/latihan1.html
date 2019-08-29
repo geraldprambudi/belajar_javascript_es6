@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>class object</title>
+</head>
+<body>
+	<script>
+		class Orang {
+			constructor(namaDepan, namaBelakang,tglLahir) {
+				this.namaDepan = namaDepan;
+				this.namaBelakang = namaBelakang;
+				this.tglLahir = new Date(tglLahir);
+			}
+
+			// add method
+			getTahunLahir() {
+				return this.tglLahir.getFullYear();
+			}
+
+			getNamaDepan() {
+				return `${this.namaDepan}`;
+			}
+		}
+		// add object
+		const Orang1 = new Orang("berry", "maulana", "3-2-1996");
+
+		console.log(Orang1);
+		console.log(Orang1.getTahunLahir());
+		console.log(Orang1.getNamaDepan());
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Properties DOM</title>
+</head>
+<body>
+	<ul class="list">
+		<li class="lists">mangga</li>
+		<li class="lists">apel</li>
+		<li class="lists">jeruk</li>
+		<li class="lists">pisang</li>
+	</ul>
+	<script>
+		 const ul = document.querySelector(".list");
+		 // semua ul class list hilang semua
+		 // ul.remove();
+
+		 // hanya lists yang di hapus yang menghilang
+		 ul.lastElementChild.remove();
+
+		 // mengubah data awal di list pertama
+		 ul.firstElementChild.textContent = 'Hello';
+
+		 // mengubah data yang ke-1 yaitu apel menjadi bewoksatukosong, karena mulai dari 0 ya
+		 ul.children[1].innerHTML = 'bewoksatukosong';
+
+		 // mengubah data yang terakhir menjadi hallo apa kabar
+		 ul.lastElementChild.innerHTML = '<h1>hallo apa kabar</h1>'
+	</script>
+</body>
+</html>
